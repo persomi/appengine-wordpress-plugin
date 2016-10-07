@@ -347,7 +347,7 @@ class Uploads {
 		if ( $real_size ) {
 			$options = [
 				'size' => $real_size,
-				'crop' => (bool) $size['crop']
+				'crop' => false // HACK (bool) $size['crop']
 			];
 		}
 		else {
